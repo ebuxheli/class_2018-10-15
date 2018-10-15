@@ -1,0 +1,22 @@
+---
+title: "Class 10/15/18"
+author: "Enxhi Buxheli"
+date: "10/15/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(dplyr)
+library(readxl)
+```
+
+```{r}
+enroll_15 <- read_xlsx("CourseEnrollmentStatistics.xlsx")
+enroll_16 <- read_xlsx("copy_of_class_enrollment_summary_by_term_10.06.2016.xlsx", skip = 2)
+enroll_17 <- read_xlsx("class_enrollment_summary_by_term_10.20.17.xlsx", skip = 2)
+enroll_18 <- read_xlsx("class_enrollment_summary_by_term_03.06.18.xlsx", skip = 2)
+```
+
